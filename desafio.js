@@ -29,29 +29,71 @@ function digiteONumero () {
 
 function getTheCurse ( aluno ) {
     alert(`o curso é ${aluno.curso}`)
-   let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
-   if (novaConsulta == 1) { digiteONumero()}
-   else { return alert("consulta concluída")}
+    
+    
+    for ( i=0; i < 2; i++) {
+        let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
+
+        if (novaConsulta == 1) { 
+            digiteONumero()
+        }
+        if ( novaConsulta == 2 ) {
+            alert("consulta concluida")
+        }
+        if (novaConsulta > 2 || novaConsulta < 0) {
+            i =0 
+        }
+    }
 }
 
 function getTheSubjects ( aluno) {
     alert(`Matéria dos curso: ${aluno.materias}`)
-   let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
-   if (novaConsulta == 1) { digiteONumero()}
-   else { return alert("consulta concluida")}
+    for ( i=0; i < 2; i++) {
+        let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
+
+        if (novaConsulta == 1) { 
+            digiteONumero()
+        }
+        if ( novaConsulta == 2 ) {
+            alert("consulta concluida")
+        }
+        if (novaConsulta > 2 || novaConsulta < 0) {
+            i =0 
+        }
+    }
 }
 function registrationStatus (aluno) {
     if ( aluno.situacaoMatricula == true) { alert(`Ativo`)}
-   else { alert(`Inativo`)}
-   let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
-   if (novaConsulta == 1) { digiteONumero()}
-   else { return alert("consulta concluida")}
+    else { alert(`Inativo`)}
+    for ( i=0; i < 2; i++) {
+        let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
+
+        if (novaConsulta == 1) { 
+            digiteONumero()
+        }
+        if ( novaConsulta == 2 ) {
+            alert("consulta concluida")
+        }
+        if (novaConsulta > 2 || novaConsulta < 0) {
+            i =0 
+        }
+}
 }
 function generateStudentCard (aluno) {
     let cardInformation = `nome: ${aluno.name}, idade: ${31}, curso: ${aluno.curso}, instituição: ${aluno.instituicao};`
     alert(`A carteira de estudante tem os dados: ${cardInformation}`)
-    let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
-   if (novaConsulta == 1) { digiteONumero()}
-   else { return alert("consulta concluida")}
+    for ( i=0; i < 2; i++) {
+        let novaConsulta= prompt('deseja continuar consultando? 1 - sim 2- nao ')
+
+        if (novaConsulta == 1) { 
+            digiteONumero()
+        }
+        if ( novaConsulta == 2 ) {
+            alert("consulta concluida")
+        }
+        if (novaConsulta > 2 || novaConsulta < 0) {
+            i =0 
+        }
+}
 }   
 
